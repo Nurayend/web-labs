@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{   
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: rgb(28, 30, 33);    
+    background: rgb(240, 242, 245);		
+}
+.part{
+    padding: 120px;
+}
+.container{
+    max-width: 992px;
+    margin: auto;
+}
+.row{
+    display: flex;		
+}
+.left{
+    width: 500px;
+    margin: auto;
+}
+.image{
+    height: 106px;
+    margin: -28px;	
+}
+h2{
+    font-size: 28px;
+    font-weight: normal;
+    max-width: 500px;
+    padding: 20px 0 20px;
+}
+.main{
+    max-width: 450px;
+    margin: auto;
+    text-align: center;	
+}
+.main form	{
+    width: 400px;
+    height: 360px;
+    padding: 20px;
+    margin:1px 0 30px 55px;
+    background: rgb(255,255,255);
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1); 
+}
+.main form input{
+    width: 100%;
+    height: 52px;
+    padding: 0 15px;
+    font-size: 17px;
+    border-radius: 6px;
+    border: 1px solid rgb(221,223,226);
+    margin-bottom: 15px;
+}
+::placeholder{
+    color: rgb(144, 148, 182);
+}
+.buttons{
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    background: #1877f2;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.sign a{
+    display: block;
+}
+.newacc a{
+    display: inline-block;
+    padding: 0 17px;
+    background: #42b72a;	
+}
+.forget a{
+    font-size: 14px;
+    line-height: 10px;
+    color: #1877f2;	
+}  
+p a	{
+    color: #1c1e21;
+    font-weight: 600;
+}
+#line{
+    border-bottom: 1px solid #dadbe1;
+    margin: 20px 16px;		
+}
+.text{
+    margin-left:55px;
+}
+.part2{  
+    font-size: 12px;
+    background-color: rgb(255,255,255);
+    margin:auto;  
+}
+.lang{
+    margin-left: 185px;
+}
+.lang a{
+    color: #8a8d91;
+} 
+#line_2{
+    border-bottom: 1px solid #dddfe2;
+    height: 8px;
+    margin-bottom: 8px;
+    margin-right: 150px;	
+}
+h5{
+    margin-top: 20px;
+    color: #8a8d91;
+}

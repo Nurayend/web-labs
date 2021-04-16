@@ -1,0 +1,42 @@
+<div class = "container2">
+    <h2>Products</h2>
+    <div *ngFor="let product of products; let i = index" class="box">
+        <img src="{{product.image[product.curImage]}}" (click)=openLink(product.link) class="img-product">
+        <h3>
+            <a class="name" [routerLink]="['/categories', categoryIdFromRoute, '/products', product.id]">
+                {{product.name}}
+            </a>
+        </h3>
+        <p>
+            <strong>Description:</strong> {{product.description}}
+        </p>
+        <div class = "rating">
+            <small><strong>Rating: {{product.rating}}</strong></small>
+        </div>
+        <div class = "price">
+            <small><strong>Price: {{ product.price | currency }}</strong></small>
+        </div>
+        <div class = "numberOflikes">
+            <small><strong>Likes: {{product.like}}</strong></small>
+        </div>
+        <div class = "like">
+            <p *ngIf="product.isLiked"><a class="button fancy-button"></a>
+                <i class="material-icons">favorite</i>
+            </p>
+            <p *ngIf="!product.isLiked">
+                <a routerLink="/category" class="button fancy-button"></a>
+                <i class="material-icons">favorite_border</i>
+            </p>
+        </div>
+        <a [href]="product.share" target="_blank" class="share-button">
+            <button (click)="share(i)">
+                Share
+            </button>
+        </a>
+        <app-product-alerts 
+        [product]="product" (notify)="onNotify()">
+        </app-product-alerts>
+        <button class="share-button" (click)="like(i)">Like</button>
+        <button class="share-button" (click)="remove(product.id)">Remove</button>
+    </div>
+</div>

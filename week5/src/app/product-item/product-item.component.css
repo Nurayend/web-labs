@@ -1,0 +1,19 @@
+
+.share-button {
+    margin-bottom: 5px;
+    margin-right: 10px;
+    width: 120px;
+    height:30px;
+}
+.box {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 2px solid rgba(24, 0, 243, 0.651);
+    border-top: 2px solid rgba(24, 0, 243, 0.651);
+}
+
+.img-product {
+   width:330px;
+}
